@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research – Alan Zhong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research interests of Wenrui Zhong, Astrophysics PhD student.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <div class="nav-name">Alan Zhong</div>
+    <nav class="nav-links">
+      <a href="index.html">About</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="section-kicker">Research</div>
+    <h1>Research directions</h1>
+    <div class="two-col">
+      <div>
+        <p><strong>First stars and galactic building blocks</strong></p>
+        <p>
+          My PhD will focus on the physics of the first generations of
+          stars and galaxies and how their feedback enriches the
+          surrounding medium with metals. I am particularly interested in:
+        </p>
+        <ul>
+          <li>How metals from Population III supernovae mix into nearby haloes</li>
+          <li>When, where, and how metal-enriched (Pop II) stars can form</li>
+          <li>The role of small “building block” systems in assembling larger galaxies</li>
+        </ul>
+        <p>
+          A key theme is to connect simulation results to simplified
+          physical pictures that help us understand which processes really
+          control star formation in the early Universe.
+        </p>
+      </div>
+
+      <div>
+        <p><strong>Methods and tools</strong></p>
+        <ul>
+          <li>Hydrodynamical and N-body simulations</li>
+          <li>Analysis of high-resolution cosmological simulation data</li>
+          <li>Python and compiled-language (e.g. C / Fortran) workflows on HPC systems</li>
+          <li>Use of auxiliary functionals and Lyapunov-type arguments where useful</li>
+        </ul>
+        <p>
+          During my PhD I hope to combine detailed simulations with
+          semi-analytic modelling to connect early-time physics to
+          observational constraints from JWST and future 21-cm or
+          spectroscopic surveys.
+        </p>
+      </div>
+    </div>
+  </section>
+<section class="research-figure">
+  <div class="section-kicker">Recent Work</div>
+  <h2>Lyman–Werner radiation in early haloes</h2>
+
+  <p>
+    As part of my current research work, I analyse the Lyman–Werner (LW)
+    radiation environment around early galaxies. LW radiation plays a key
+    role in regulating the formation of molecular hydrogen and therefore
+    the formation of Population III stars.
+  </p>
+
+  <p>
+    The figure below shows an example of the LW background evolution in
+    a cosmological simulation, combining contributions from Population II
+    and Population III stars with a global background model.
+  </p>
+
+  <figure class="research-plot">
+    <img src="j21evolution.png"
+         alt="Evolution of Lyman-Werner radiation J21 with redshift">
+
+    <figcaption>
+      Evolution of the Lyman–Werner radiation field (J21) as a function of
+      redshift in early-universe simulations. Contributions from Pop III,
+      Pop II, and global background radiation are shown.
+    </figcaption>
+  </figure>
+ <p>
+    The figure below shows the branch-by-branch evolution of the Pop III, Pop II,
+    and total \(J_{21}\) contributions at the shell of the halo as a function of redshift. The thick blue
+    curve highlights the main branch, while the fainter curves correspond to
+    other branches in the merger tree.
+  </p>
+
+  <figure class="research-plot">
+    <img src="J21_by_branch_with_main.png"
+         alt="Branch-by-branch evolution of Pop III, Pop II, and total J21 in the simulation">
+    <figcaption>
+      Branch-by-branch evolution of the LW radiation field in the simulation.
+      The top panel shows Pop III contributions, the middle panel shows Pop II
+      contributions, and the bottom panel shows the total \(J_{21}\) including
+      the background model. The main branch is highlighted in blue and compared
+      with the surrounding subhalo population.
+    </figcaption>
+  </figure>
+</section>
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Wenrui Zhong
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

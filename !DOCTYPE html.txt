@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Wenrui Zhong – PhD Student in Astrophysics</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Personal webpage of Wenrui Zhong, PhD student in Astrophysics at the University of Edinburgh.">
+
+  <style>
+
+    :root {
+
+      --bg: #0b1020;
+
+      --bg-alt: #141a2b;
+
+      --accent: #4da6ff;
+
+      --accent-soft: #233554;
+
+      --text-main: #f5f7ff;
+
+      --text-muted: #c3c6d8;
+
+      --border-subtle: #2a3145;
+
+      --max-width: 900px;
+
+    }
+
+
+
+    * {
+
+      box-sizing: border-box;
+
+    }
+
+
+
+    body {
+
+      margin: 0;
+
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+
+                   "Segoe UI", sans-serif;
+
+      background: radial-gradient(circle at top, #182341 0, #050712 55%);
+
+      color: var(--text-main);
+
+      line-height: 1.6;
+
+    }
+
+
+
+    a {
+
+      color: var(--accent);
+
+      text-decoration: none;
+
+    }
+
+
+
+    a:hover {
+
+      text-decoration: underline;
+
+    }
+
+
+
+    header {
+
+      border-bottom: 1px solid var(--border-subtle);
+
+      background: linear-gradient(135deg, rgba(19, 32, 64, 0.95), rgba(5, 7, 18, 0.98));
+
+      backdrop-filter: blur(14px);
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 10;
+
+    }
+
+
+
+    .nav-inner {
+
+      max-width: var(--max-width);
+
+      margin: 0 auto;
+
+      padding: 0.75rem 1.25rem;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 1rem;
+
+    }
+
+
+
+    .nav-name {
+
+      font-weight: 600;
+
+      letter-spacing: 0.03em;
+
+      font-size: 0.95rem;
+
+      text-transform: uppercase;
+
+    }
+
+
+
+    .nav-links {
+
+      display: flex;
+
+      gap: 1.25rem;
+
+      font-size: 0.9rem;
+
+    }
+
+
+
+    .nav-links a {
+
+      color: var(--text-muted);
+
+      position: relative;
+
+      padding-bottom: 0.1rem;
+
+    }
+
+
+
+    .nav-links a::after {
+
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+
+      bottom: 0;
+
+      height: 2px;
+
+      width: 0;
+
+      background: var(--accent);
+
+      transition: width 0.2s ease-out;
+
+    }
+
+
+
+    .nav-links a:hover::after {
+
+      width: 100%;
+
+    }
+
+
+
+    main {
+
+      max-width: var(--max-width);
+
+      margin: 0 auto;
+
+      padding: 1.75rem 1.25rem 3rem;
+
+    }
+
+
+
+    .hero {
+
+      display: grid;
+
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+
+      gap: 2rem;
+
+      align-items: center;
+
+      padding: 2rem;
+
+      margin-bottom: 2rem;
+
+      border-radius: 1.5rem;
+
+      background: radial-gradient(circle at top left, #1c2747 0, #0b1020 50%);
+
+      border: 1px solid var(--border-subtle);
+
+      box-shadow:
+
+        0 18px 40px rgba(0, 0, 0, 0.55),
+
+        0 0 0 1px rgba(255, 255, 255, 0.02);
+
+    }
+
+
+
+    .hero-title {
+
+      font-size: clamp(1.9rem, 3vw, 2.4rem);
+
+      margin: 0 0 0.4rem;
+
+    }
+
+
+
+    .hero-subtitle {
+
+      margin: 0 0 1rem;
+
+      font-size: 1rem;
+
+      color: var(--text-muted);
+
+    }
+
+
+
+    .tagline {
+
+      margin: 0 0 1.25rem;
+
+      font-size: 0.98rem;
+
+      color: var(--text-main);
+
+      max-width: 34rem;
+
+    }
+
+
+
+    .hero-meta {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 0.6rem;
+
+      margin-bottom: 1.25rem;
+
+      font-size: 0.9rem;
+
+    }
+
+
+
+    .hero-meta span {
+
+      padding: 0.25rem 0.6rem;
+
+      border-radius: 999px;
+
+      background: rgba(77, 166, 255, 0.1);
+
+      border: 1px solid rgba(77, 166, 255, 0.3);
+
+    }
+
+
+
+    .hero-actions {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 0.75rem;
+
+    }
+
+
+
+    .btn {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 0.4rem;
+
+      padding: 0.6rem 1.1rem;
+
+      border-radius: 999px;
+
+      border: 1px solid transparent;
+
+      font-size: 0.9rem;
+
+      cursor: pointer;
+
+      text-decoration: none;
+
+      transition: transform 0.08s ease-out, box-shadow 0.08s ease-out, background 0.1s;
+
+    }
+
+
+
+    .btn-primary {
+
+      background: var(--accent);
+
+      color: #020308;
+
+      box-shadow: 0 12px 24px rgba(77, 166, 255, 0.35);
+
+      font-weight: 500;
+
+    }
+
+
+
+    .btn-primary:hover {
+
+      transform: translateY(-1px);
+
+      box-shadow: 0 16px 32px rgba(77, 166, 255, 0.45);
+
+      text-decoration: none;
+
+    }
+
+
+
+    .btn-ghost {
+
+      background: rgba(12, 17, 32, 0.8);
+
+      color: var(--text-muted);
+
+      border-color: var(--border-subtle);
+
+    }
+
+
+
+    .btn-ghost:hover {
+
+      background: rgba(22, 29, 52, 0.9);
+
+      text-decoration: none;
+
+    }
+
+
+
+    .hero-photo-wrap {
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+
+    .hero-photo {
+
+      width: 190px;
+
+      height: 190px;
+
+      border-radius: 999px;
+
+      background: radial-gradient(circle at 30% 20%, #4da6ff 0, #1b2442 40%, #050712 80%);
+
+      border: 2px solid rgba(255, 255, 255, 0.12);
+
+      position: relative;
+
+      overflow: hidden;
+
+    }
+
+
+
+    .hero-photo img {
+
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: cover;
+
+      display: block;
+
+    }
+
+
+
+    .hero-photo-placeholder {
+
+      position: absolute;
+
+      inset: 0;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 0.9rem;
+
+      color: var(--text-muted);
+
+      text-align: center;
+
+      padding: 1rem;
+
+    }
+
+
+
+    section {
+
+      margin-bottom: 2.5rem;
+
+      padding: 1.75rem;
+
+      border-radius: 1.25rem;
+
+      background: linear-gradient(135deg, rgba(11, 16, 32, 0.96), rgba(8, 11, 24, 0.98));
+
+      border: 1px solid var(--border-subtle);
+
+    }
+
+
+
+    section h2 {
+
+      margin-top: 0;
+
+      font-size: 1.3rem;
+
+      margin-bottom: 0.9rem;
+
+    }
+
+
+
+    .section-kicker {
+
+      font-size: 0.75rem;
+
+      letter-spacing: 0.18em;
+
+      text-transform: uppercase;
+
+      color: var(--text-muted);
+
+      margin-bottom: 0.25rem;
+
+    }
+
+
+
+    .two-col {
+
+      display: grid;
+
+      grid-template-columns: minmax(0, 2.3fr) minmax(0, 1.7fr);
+
+      gap: 1.5rem;
+
+    }
+
+
+
+    p {
+
+      margin: 0 0 0.75rem;
+
+      color: var(--text-muted);
+
+    }
+
+
+
+    ul {
+
+      padding-left: 1.1rem;
+
+      margin: 0.5rem 0 0.4rem;
+
+      color: var(--text-muted);
+
+    }
+
+
+
+    li + li {
+
+      margin-top: 0.3rem;
+
+    }
+
+
+
+    .pill-list {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 0.4rem;
+
+      margin-top: 0.35rem;
+
+    }
+
+
+
+    .pill {
+
+      font-size: 0.8rem;
+
+      padding: 0.2rem 0.6rem;
+
+      border-radius: 999px;
+
+      background: rgba(35, 53, 84, 0.9);
+
+      border: 1px solid rgba(84, 112, 158, 0.9);
+
+    }
+
+
+
+    .pub-item + .pub-item {
+
+      margin-top: 0.7rem;
+
+      padding-top: 0.7rem;
+
+      border-top: 1px dashed rgba(77, 166, 255, 0.2);
+
+    }
+
+
+
+    .pub-title {
+
+      font-weight: 500;
+
+      color: var(--text-main);
+
+    }
+
+
+
+    .pub-meta {
+
+      font-size: 0.85rem;
+
+      color: var(--text-muted);
+
+    }
+
+
+
+    .teaching-list li strong {
+
+      color: var(--text-main);
+
+      font-weight: 500;
+
+    }
+
+
+
+    .contact-grid {
+
+      display: grid;
+
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+
+      gap: 1.5rem;
+
+      align-items: start;
+
+    }
+
+
+
+    .contact-card {
+
+      padding: 1rem 1.1rem;
+
+      border-radius: 1rem;
+
+      background: var(--bg-alt);
+
+      border: 1px solid var(--border-subtle);
+
+      font-size: 0.9rem;
+
+    }
+
+
+
+    .contact-card dt {
+
+      font-weight: 500;
+
+      margin-top: 0.4rem;
+
+      color: var(--text-main);
+
+    }
+
+
+
+    .contact-card dd {
+
+      margin: 0.05rem 0 0.25rem;
+
+      color: var(--text-muted);
+
+    }
+
+
+
+    footer {
+
+      max-width: var(--max-width);
+
+      margin: 0 auto;
+
+      padding: 0 1.25rem 1.75rem;
+
+      font-size: 0.78rem;
+
+      color: var(--text-muted);
+
+      text-align: right;
+
+    }
+
+
+
+    @media (max-width: 768px) {
+
+      .hero {
+
+        grid-template-columns: minmax(0, 1fr);
+
+        padding: 1.5rem;
+
+      }
+
+
+
+      .hero-photo-wrap {
+
+        order: -1;
+
+      }
+
+
+
+      .two-col,
+
+      .contact-grid {
+
+        grid-template-columns: minmax(0, 1fr);
+
+      }
+
+
+
+      header {
+
+        position: static;
+
+      }
+
+
+
+      .nav-inner {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+  <div class="nav-inner">
+
+    <div class="nav-name">Wenrui Zhong</div>
+
+    <nav class="nav-links">
+
+      <a href="#about">About</a>
+
+      <a href="#research">Research</a>
+
+      <a href="#publications">Publications</a>
+
+      <a href="#teaching">Teaching</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero" id="top">
+
+    <div>
+
+      <h1 class="hero-title">Wenrui Zhong</h1>
+
+      <p class="hero-subtitle">
+
+        Incoming PhD Student in Astrophysics · University of Edinburgh
+
+      </p>
+
+      <p class="tagline">
+
+        I study how the first generations of stars and galaxies formed and
+
+        enriched the early Universe, combining analytical theory with
+
+        numerical simulations.
+
+      </p>
+
+
+
+      <div class="hero-meta">
+
+        <span>Cosmic dawn &amp; early galaxies</span>
+
+        <span>Computational astrophysics</span>
+
+        <span>Fluid &amp; plasma dynamics</span>
+
+      </div>
+
+
+
+      <div class="hero-actions">
+
+        <a class="btn btn-primary" href="#research">View my research</a>
+
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="hero-photo-wrap">
+
+      <div class="hero-photo">
+
+        <!-- Replace with your own photo, e.g. <img src="me.jpg" alt="Portrait of Wenrui Zhong"> -->
+
+        <div class="hero-photo-placeholder">
+
+          Add your photo here<br>(replace this box with an &lt;img&gt; tag)
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="section-kicker">About</div>
+
+    <h2>Short bio</h2>
+
+    <div class="two-col">
+
+      <div>
+
+        <p>
+
+          I am an incoming PhD student in Astrophysics at the
+
+          <strong>University of Edinburgh</strong>, where I will work on
+
+          the formation of the first stars and galaxies and the build–up
+
+          of metals at cosmic dawn.
+
+        </p>
+
+        <p>
+
+          Before starting my PhD, I completed an MSc in
+
+          <strong>Advanced Aeronautical Engineering</strong> at Imperial
+
+          College London and a BSc in <strong>Physics with
+
+          Astrophysics</strong> at the University of Manchester.
+
+          My background spans cosmology, stellar evolution, CFD, and
+
+          plasma/kinetic theory.
+
+        </p>
+
+        <p>
+
+          I enjoy projects that sit at the interface of
+
+          <strong>theory</strong>, <strong>computation</strong>, and
+
+          <strong>astrophysical applications</strong>, from metal
+
+          enrichment in minihaloes to kinetic descriptions of
+
+          plasmas in space and laboratory environments.
+
+        </p>
+
+      </div>
+
+      <div>
+
+        <p><strong>Current interests</strong></p>
+
+        <ul>
+
+          <li>Pop III / Pop II transition and metal enrichment</li>
+
+          <li>Formation pathways of early galaxies and building blocks</li>
+
+          <li>Numerical methods for Vlasov–Poisson / Vlasov–Maxwell systems</li>
+
+          <li>Connections between plasma physics and astrophysical flows</li>
+
+        </ul>
+
+
+
+        <p><strong>Keywords</strong></p>
+
+        <div class="pill-list">
+
+          <span class="pill">Cosmic dawn</span>
+
+          <span class="pill">Star formation</span>
+
+          <span class="pill">Metal enrichment</span>
+
+          <span class="pill">Hydrodynamics</span>
+
+          <span class="pill">CFD</span>
+
+          <span class="pill">Plasma physics</span>
+
+          <span class="pill">Numerical methods</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- RESEARCH -->
+
+  <section id="research">
+
+    <div class="section-kicker">Research</div>
+
+    <h2>Research directions</h2>
+
+    <div class="two-col">
+
+      <div>
+
+        <p><strong>First stars and galactic building blocks</strong></p>
+
+        <p>
+
+          My PhD work will focus on the physical processes governing the
+
+          first generations of stars and galaxies and how their feedback
+
+          enriches and reshapes the surrounding medium. I am particularly
+
+          interested in:
+
+        </p>
+
+        <ul>
+
+          <li>How metals from Population III supernovae mix into nearby haloes</li>
+
+          <li>When, where, and how metal-enriched (Pop II) stars can form</li>
+
+          <li>The role of small “building block” systems in assembling larger galaxies</li>
+
+        </ul>
+
+
+
+        <p><strong>Auxiliary functionals &amp; kinetic theory</strong></p>
+
+        <p>
+
+          In parallel, I have been exploring rigorous bounding methods
+
+          (auxiliary/背景流 functional approaches) for kinetic equations
+
+          such as the Vlasov–Maxwell system, with applications to
+
+          plasma devices and space plasmas. This work naturally connects
+
+          mathematical analysis, numerical optimisation, and physical
+
+          interpretation.
+
+        </p>
+
+      </div>
+
+      <div>
+
+        <p><strong>Methods &amp; tools</strong></p>
+
+        <ul>
+
+          <li>Hydrodynamical and N-body simulations</li>
+
+          <li>Analysis of high-resolution cosmological simulation data</li>
+
+          <li>Python, C/Fortran environments, and HPC workflows</li>
+
+          <li>Lyapunov / background flow methods and sum-of-squares tools</li>
+
+        </ul>
+
+
+
+        <p><strong>Looking ahead</strong></p>
+
+        <p>
+
+          During my PhD I hope to combine detailed numerical simulations
+
+          with semi-analytic models so that we can better connect early-time
+
+          physics to upcoming observational constraints from facilities
+
+          such as JWST and future 21-cm experiments.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- PUBLICATIONS / PROJECTS -->
+
+  <section id="publications">
+
+    <div class="section-kicker">Work</div>
+
+    <h2>Selected projects &amp; writing</h2>
+
+
+
+    <div class="pub-item">
+
+      <div class="pub-title">Background flow / auxiliary functional methods for Vlasov equations</div>
+
+      <div class="pub-meta">
+
+        MSc Research Project · Imperial College London · 2024–2025
+
+      </div>
+
+      <p>
+
+        Developed and tested auxiliary functional (background flow) methods
+
+        to obtain rigorous bounds for kinetic systems such as the
+
+        Vlasov–Maxwell equations, with an eye towards applications to Hall
+
+        thrusters and space plasmas. This involved constructing Lyapunov-type
+
+        functionals, computing their time derivatives, and exploring
+
+        sum-of-squares formulations.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="pub-item">
+
+      <div class="pub-title">Early-Universe metal enrichment and Pop II star formation</div>
+
+      <div class="pub-meta">
+
+        Ongoing reading &amp; pre-PhD project · University of Edinburgh
+
+      </div>
+
+      <p>
+
+        Building a literature-based and simulation-informed overview of how
+
+        metals from the first stars propagate, mix, and cool in primordial
+
+        haloes, and what this implies for the first generations of
+
+        metal-enriched stars and small galaxies.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="pub-item">
+
+      <div class="pub-title">Undergraduate dissertation in radio cosmology / interferometry</div>
+
+      <div class="pub-meta">
+
+        BSc Physics with Astrophysics · University of Manchester
+
+      </div>
+
+      <p>
+
+        Worked on problems related to low-frequency radio cosmology and
+
+        interferometric techniques, gaining experience with data analysis,
+
+        simulation tools, and the challenges of extracting cosmological
+
+        signals.
+
+      </p>
+
+    </div>
+
+
+
+    <!-- Add more items here as your work progresses -->
+
+  </section>
+
+
+
+  <!-- TEACHING & OUTREACH -->
+
+  <section id="teaching">
+
+    <div class="section-kicker">Teaching</div>
+
+    <h2>Teaching &amp; outreach</h2>
+
+    <div class="two-col">
+
+      <div>
+
+        <ul class="teaching-list">
+
+          <li>
+
+            <strong>PhD-level teaching (planned)</strong><br>
+
+            During my PhD I hope to be involved in supervising undergraduate
+
+            projects and running problem-class or computing sessions in
+
+            astrophysics and fluid dynamics.
+
+          </li>
+
+          <li>
+
+            <strong>Informal tutoring</strong><br>
+
+            Previously provided informal support to peers and junior students
+
+            in topics including classical mechanics, electromagnetism, CFD,
+
+            and basic cosmology.
+
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <p>
+
+          I am always happy to talk to students who are curious about
+
+          cosmology, the early Universe, or how physics and engineering
+
+          ideas connect. If you are a student at Edinburgh and would like to
+
+          discuss project ideas or reading suggestions, feel free to get in
+
+          touch.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="section-kicker">Contact</div>
+
+    <h2>Get in touch</h2>
+
+
+
+    <div class="contact-grid">
+
+      <div>
+
+        <p>
+
+          The best way to reach me is by email. I am also happy to connect
+
+          over research-related platforms. If you are at Edinburgh, feel
+
+          free to drop me a message to arrange a chat in person.
+
+        </p>
+
+        <p>
+
+          Prospective students or collaborators interested in cosmic dawn,
+
+          metal enrichment, or connections between plasma physics and
+
+          astrophysics are especially welcome.
+
+        </p>
+
+      </div>
+
+      <div class="contact-card">
+
+        <dl>
+
+          <dt>Email</dt>
+
+          <dd>
+
+            <!-- Replace with your real addresses -->
+
+            <a href="mailto:s2683874@ed.ac.uk">s2683874@ed.ac.uk</a><br>
+
+            <a href="mailto:your.personal.email@example.com">your.personal.email@example.com</a>
+
+          </dd>
+
+
+
+          <dt>Institution</dt>
+
+          <dd>
+
+            Institute for Astronomy (IfA)<br>
+
+            University of Edinburgh
+
+          </dd>
+
+
+
+          <dt>Links</dt>
+
+          <dd>
+
+            <!-- Replace # with your own links -->
+
+            <a href="#" target="_blank" rel="noopener">CV (PDF)</a><br>
+
+            <a href="#" target="_blank" rel="noopener">GitHub</a><br>
+
+            <a href="#" target="_blank" rel="noopener">Google Scholar</a>
+
+          </dd>
+
+        </dl>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+
+<footer>
+
+  &copy; <span id="year"></span> Wenrui Zhong · This page is intentionally minimal and fast.
+
+</footer>
+
+
+
+<script>
+
+  // Set current year automatically
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
